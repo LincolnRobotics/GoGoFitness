@@ -4,67 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/KaylaBackgroundr"
+    android:background="@drawable/kaylabackground"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="312dp"
-        android:layout_height="258dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/logoview"
+        android:layout_width="319dp"
+        android:layout_height="259dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TitleText"
-        app:srcCompat="@drawable/GGF_Logo" />
+        app:layout_constraintTop_toBottomOf="@+id/GoGoText"
+        app:srcCompat="@drawable/ggflogo" />
 
     <ImageButton
-        android:id="@+id/LoginButton"
-        android:layout_width="202dp"
-        android:layout_height="55dp"
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:scaleType="centerInside"
-        app:layout_constraintBottom_toTopOf="@+id/AboutAppButton"
+        app:layout_constraintBottom_toTopOf="@+id/guestbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/loginnyr" />
+        app:layout_constraintTop_toBottomOf="@+id/logoview"
+        app:srcCompat="@drawable/loginny" />
 
     <ImageButton
-        android:id="@+id/AboutAppButton"
+        android:id="@+id/guestbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        app:layout_constraintBottom_toTopOf="@+id/GuestButton"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/aboutappbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginButton"
-        app:srcCompat="@drawable/aboutappnyr" />
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:srcCompat="@drawable/guestny" />
 
     <ImageButton
-        android:id="@+id/GuestButton"
+        android:id="@+id/aboutappbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AboutAppButton"
-        app:srcCompat="@drawable/GuestNYr" />
+        app:layout_constraintTop_toBottomOf="@+id/guestbutton"
+        app:srcCompat="@drawable/aboutappny" />
 
     <TextView
-        android:id="@+id/TitleText"
-        android:layout_width="227dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
+        android:id="@+id/GoGoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="GoGo Fitness"
-        android:textAlignment="center"
+        android:text="Go Go Fitness"
         android:textColor="@color/white"
-        android:textSize="30"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/logoview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

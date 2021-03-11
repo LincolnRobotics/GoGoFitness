@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoGoFirst">
-        <activity android:name=".GuestScreen"></activity>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".GuestScreen" />
         <activity android:name=".AboutAppScreen" />
         <activity android:name=".LoginScreen" />
         <activity android:name=".MainActivity">
